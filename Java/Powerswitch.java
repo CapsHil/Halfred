@@ -2,6 +2,9 @@ public class Powerswitch {
 
 	private String name, id;
 	private Script script;
+    final static String path = "RPi_utils/";
+	private String 4Off = "1119508";
+	private String 4On = "1119505";
 
 	public Powerswitch(String name, String id) {
 		this.name = name;
@@ -9,10 +12,14 @@ public class Powerswitch {
 	}
 
 	public void on() {
-		script = new Script("./power.sh "+id+" 1");
+		System.out.println(name+" is now on");
+		script = new Script(path+"codesend "+4On);
+		script.sudoExec();
 	}
 
 	public void off() {
-		script = new Script("./power.sh "+id+" 0");
+		System.out.println(name+" is now off");
+		script = new Script(path+"codesend "+4Off);
+		script.sudoExec();
 	}
 }
