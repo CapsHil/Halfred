@@ -13,15 +13,25 @@ public class TCPServer {
             while (true) {
                 Socket socketClient = socketServeur.accept();
                 String message = "";
+                String response = "";
 
                 System.out.println("Connection from : "+socketClient.getInetAddress());
 
                 BufferedReader in = new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
                 PrintStream out = new PrintStream(socketClient.getOutputStream());
                 message = in.readLine();
-                out.println(message);
+                
 
-                System.out.println(message);
+                if(message.equals("switchOn_1")){
+                    response = "Switch 1 On";
+                    System.out.println("Switch 1 on");
+                }
+                else {
+                    response = "Unknown command";
+                }
+                out.println(response);
+                //System.out.println(message);
+                
                 socketClient.close();
             }
 
