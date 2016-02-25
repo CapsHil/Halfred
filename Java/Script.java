@@ -38,5 +38,25 @@ public class Script {
             e.printStackTrace();
         }
     }
+    public void sudoExec() {
+        try {
+            Process process = Runtime.getRuntime().exec("sudo "+scripts);
+            BufferedReader output = getOutput(process);
+            BufferedReader error = getError(process);
+            String line = "";
+
+            while ((line = output.readLine()) != null)
+                System.out.println(line);
+
+            while ((line = error.readLine()) != null)
+                System.out.println(line);
+
+            process.waitFor();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
