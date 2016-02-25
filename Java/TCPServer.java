@@ -4,7 +4,7 @@ import java.io.*;
 public class TCPServer {
 
     final static int port = 9632;
-    final static String path = "RPi_utils/"
+    final static String path = "RPi_utils/";
 
     public TCPServer() {
         try {
@@ -27,7 +27,7 @@ public class TCPServer {
                 if(message.equals("switchOff_4")){
                     response = "Switch 4 Off";
                     System.out.println("Switch 4 off");
-                    script = new Script(path+"codesend 1119508")
+                    script = new Script(path+"codesend 1119508");
                     script.sudoExec();
                 }
                 else {
