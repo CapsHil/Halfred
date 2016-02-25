@@ -10,7 +10,7 @@ public class TCPServer {
             ServerSocket socketServeur = new ServerSocket(port);
             System.out.println("Starting server");
             String response = "";
-            Powerswitch switch4 = new Powerswitch("Bureau", 4);
+            Powerswitch switch4 = new Powerswitch("Bureau", "4");
 
             while (true) {
                 Socket socketClient = socketServeur.accept();
