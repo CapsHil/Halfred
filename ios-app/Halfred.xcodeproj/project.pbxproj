@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FA5877B1C86541E004DA09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5877A1C86541E004DA09F /* AppDelegate.swift */; };
+		8FA5877D1C86541E004DA09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5877C1C86541E004DA09F /* ViewController.swift */; };
+		8FA587801C86541E004DA09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA5877E1C86541E004DA09F /* Main.storyboard */; };
+		8FA587821C86541E004DA09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA587811C86541E004DA09F /* Assets.xcassets */; };
+		8FA587851C86541E004DA09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA587831C86541E004DA09F /* LaunchScreen.storyboard */; };
+		8FA587901C86541E004DA09F /* HalfredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5878F1C86541E004DA09F /* HalfredTests.swift */; };
+		8FA5879B1C86541E004DA09F /* HalfredUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5879A1C86541E004DA09F /* HalfredUITests.swift */; };
+		8FA587A91C865558004DA09F /* socket.io-client-swift in Resources */ = {isa = PBXBuildFile; fileRef = 8FA587A81C865558004DA09F /* socket.io-client-swift */; };
+		8FA587B01C86566D004DA09F /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AB1C86566D004DA09F /* ysocket.swift */; };
+		8FA587B11C86566D004DA09F /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AC1C86566D004DA09F /* ytcpsocket.c */; };
+		8FA587B21C86566D004DA09F /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AD1C86566D004DA09F /* ytcpsocket.swift */; };
+		8FA587B31C86566D004DA09F /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AE1C86566D004DA09F /* yudpsocket.c */; };
+		8FA587B41C86566D004DA09F /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AF1C86566D004DA09F /* yudpsocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA5878C1C86541E004DA09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA5876F1C86541E004DA09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA587761C86541E004DA09F;
+			remoteInfo = Halfred;
+		};
+		8FA587971C86541E004DA09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA5876F1C86541E004DA09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA587761C86541E004DA09F;
+			remoteInfo = Halfred;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FA587771C86541E004DA09F /* Halfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA5877A1C86541E004DA09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FA5877C1C86541E004DA09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA5877F1C86541E004DA09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FA587811C86541E004DA09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA587841C86541E004DA09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FA587861C86541E004DA09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA5878B1C86541E004DA09F /* HalfredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA5878F1C86541E004DA09F /* HalfredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfredTests.swift; sourceTree = "<group>"; };
+		8FA587911C86541E004DA09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA587961C86541E004DA09F /* HalfredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA5879A1C86541E004DA09F /* HalfredUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfredUITests.swift; sourceTree = "<group>"; };
+		8FA5879C1C86541E004DA09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA587A81C865558004DA09F /* socket.io-client-swift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "socket.io-client-swift"; path = "../socket.io-client-swift"; sourceTree = "<group>"; };
+		8FA587AA1C86566D004DA09F /* Halfred-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Halfred-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FA587AB1C86566D004DA09F /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/ysocket.swift; sourceTree = "<group>"; };
+		8FA587AC1C86566D004DA09F /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = ../../SwiftSocket/SwiftSocket/ysocket/ytcpsocket.c; sourceTree = "<group>"; };
+		8FA587AD1C86566D004DA09F /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ytcpsocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/ytcpsocket.swift; sourceTree = "<group>"; };
+		8FA587AE1C86566D004DA09F /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = ../../SwiftSocket/SwiftSocket/ysocket/yudpsocket.c; sourceTree = "<group>"; };
+		8FA587AF1C86566D004DA09F /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = yudpsocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/yudpsocket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA587741C86541E004DA09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587881C86541E004DA09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587931C86541E004DA09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA5876E1C86541E004DA09F = {
+			isa = PBXGroup;
+			children = (
+				8FA587791C86541E004DA09F /* Halfred */,
+				8FA5878E1C86541E004DA09F /* HalfredTests */,
+				8FA587991C86541E004DA09F /* HalfredUITests */,
+				8FA587781C86541E004DA09F /* Products */,
+				8FA587A81C865558004DA09F /* socket.io-client-swift */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA587781C86541E004DA09F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA587771C86541E004DA09F /* Halfred.app */,
+				8FA5878B1C86541E004DA09F /* HalfredTests.xctest */,
+				8FA587961C86541E004DA09F /* HalfredUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA587791C86541E004DA09F /* Halfred */ = {
+			isa = PBXGroup;
+			children = (
+				8FA5877A1C86541E004DA09F /* AppDelegate.swift */,
+				8FA5877C1C86541E004DA09F /* ViewController.swift */,
+				8FA587AB1C86566D004DA09F /* ysocket.swift */,
+				8FA587AC1C86566D004DA09F /* ytcpsocket.c */,
+				8FA587AD1C86566D004DA09F /* ytcpsocket.swift */,
+				8FA587AE1C86566D004DA09F /* yudpsocket.c */,
+				8FA587AF1C86566D004DA09F /* yudpsocket.swift */,
+				8FA5877E1C86541E004DA09F /* Main.storyboard */,
+				8FA587811C86541E004DA09F /* Assets.xcassets */,
+				8FA587831C86541E004DA09F /* LaunchScreen.storyboard */,
+				8FA587861C86541E004DA09F /* Info.plist */,
+				8FA587AA1C86566D004DA09F /* Halfred-Bridging-Header.h */,
+			);
+			path = Halfred;
+			sourceTree = "<group>";
+		};
+		8FA5878E1C86541E004DA09F /* HalfredTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA5878F1C86541E004DA09F /* HalfredTests.swift */,
+				8FA587911C86541E004DA09F /* Info.plist */,
+			);
+			path = HalfredTests;
+			sourceTree = "<group>";
+		};
+		8FA587991C86541E004DA09F /* HalfredUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA5879A1C86541E004DA09F /* HalfredUITests.swift */,
+				8FA5879C1C86541E004DA09F /* Info.plist */,
+			);
+			path = HalfredUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FA587761C86541E004DA09F /* Halfred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA5879F1C86541E004DA09F /* Build configuration list for PBXNativeTarget "Halfred" */;
+			buildPhases = (
+				8FA587731C86541E004DA09F /* Sources */,
+				8FA587741C86541E004DA09F /* Frameworks */,
+				8FA587751C86541E004DA09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Halfred;
+			productName = Halfred;
+			productReference = 8FA587771C86541E004DA09F /* Halfred.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FA5878A1C86541E004DA09F /* HalfredTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA587A21C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredTests" */;
+			buildPhases = (
+				8FA587871C86541E004DA09F /* Sources */,
+				8FA587881C86541E004DA09F /* Frameworks */,
+				8FA587891C86541E004DA09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA5878D1C86541E004DA09F /* PBXTargetDependency */,
+			);
+			name = HalfredTests;
+			productName = HalfredTests;
+			productReference = 8FA5878B1C86541E004DA09F /* HalfredTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FA587951C86541E004DA09F /* HalfredUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA587A51C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredUITests" */;
+			buildPhases = (
+				8FA587921C86541E004DA09F /* Sources */,
+				8FA587931C86541E004DA09F /* Frameworks */,
+				8FA587941C86541E004DA09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA587981C86541E004DA09F /* PBXTargetDependency */,
+			);
+			name = HalfredUITests;
+			productName = HalfredUITests;
+			productReference = 8FA587961C86541E004DA09F /* HalfredUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FA5876F1C86541E004DA09F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pierre RABY";
+				TargetAttributes = {
+					8FA587761C86541E004DA09F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					8FA5878A1C86541E004DA09F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8FA587761C86541E004DA09F;
+					};
+					8FA587951C86541E004DA09F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8FA587761C86541E004DA09F;
+					};
+				};
+			};
+			buildConfigurationList = 8FA587721C86541E004DA09F /* Build configuration list for PBXProject "Halfred" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FA5876E1C86541E004DA09F;
+			productRefGroup = 8FA587781C86541E004DA09F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FA587761C86541E004DA09F /* Halfred */,
+				8FA5878A1C86541E004DA09F /* HalfredTests */,
+				8FA587951C86541E004DA09F /* HalfredUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA587751C86541E004DA09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA587851C86541E004DA09F /* LaunchScreen.storyboard in Resources */,
+				8FA587821C86541E004DA09F /* Assets.xcassets in Resources */,
+				8FA587801C86541E004DA09F /* Main.storyboard in Resources */,
+				8FA587A91C865558004DA09F /* socket.io-client-swift in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587891C86541E004DA09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587941C86541E004DA09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA587731C86541E004DA09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA587B01C86566D004DA09F /* ysocket.swift in Sources */,
+				8FA5877D1C86541E004DA09F /* ViewController.swift in Sources */,
+				8FA587B31C86566D004DA09F /* yudpsocket.c in Sources */,
+				8FA587B11C86566D004DA09F /* ytcpsocket.c in Sources */,
+				8FA5877B1C86541E004DA09F /* AppDelegate.swift in Sources */,
+				8FA587B21C86566D004DA09F /* ytcpsocket.swift in Sources */,
+				8FA587B41C86566D004DA09F /* yudpsocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587871C86541E004DA09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA587901C86541E004DA09F /* HalfredTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA587921C86541E004DA09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA5879B1C86541E004DA09F /* HalfredUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA5878D1C86541E004DA09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA587761C86541E004DA09F /* Halfred */;
+			targetProxy = 8FA5878C1C86541E004DA09F /* PBXContainerItemProxy */;
+		};
+		8FA587981C86541E004DA09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA587761C86541E004DA09F /* Halfred */;
+			targetProxy = 8FA587971C86541E004DA09F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FA5877E1C86541E004DA09F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA5877F1C86541E004DA09F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FA587831C86541E004DA09F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA587841C86541E004DA09F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA5879D1C86541E004DA09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FA5879E1C86541E004DA09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FA587A01C86541E004DA09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Halfred/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.Halfred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Halfred/Halfred-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FA587A11C86541E004DA09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Halfred/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.Halfred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Halfred/Halfred-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8FA587A31C86541E004DA09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HalfredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.HalfredTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halfred.app/Halfred";
+			};
+			name = Debug;
+		};
+		8FA587A41C86541E004DA09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HalfredTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.HalfredTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Halfred.app/Halfred";
+			};
+			name = Release;
+		};
+		8FA587A61C86541E004DA09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HalfredUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.HalfredUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Halfred;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8FA587A71C86541E004DA09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HalfredUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CapsHil.HalfredUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Halfred;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA587721C86541E004DA09F /* Build configuration list for PBXProject "Halfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA5879D1C86541E004DA09F /* Debug */,
+				8FA5879E1C86541E004DA09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA5879F1C86541E004DA09F /* Build configuration list for PBXNativeTarget "Halfred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA587A01C86541E004DA09F /* Debug */,
+				8FA587A11C86541E004DA09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FA587A21C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA587A31C86541E004DA09F /* Debug */,
+				8FA587A41C86541E004DA09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FA587A51C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA587A61C86541E004DA09F /* Debug */,
+				8FA587A71C86541E004DA09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FA5876F1C86541E004DA09F /* Project object */;
+}

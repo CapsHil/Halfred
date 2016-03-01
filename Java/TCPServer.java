@@ -31,7 +31,7 @@ public class TCPServer {
                 } else
                     response = "Unknown command";
                 out.println(response);
-                Log.print(message, "debug");
+                Log.print("Received: "+message, "debug");
                 
                 socketClient.close();
             }
