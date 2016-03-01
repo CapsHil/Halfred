@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F1963FE1C86604E00E9E44D /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1963FB1C86604E00E9E44D /* ysocket.swift */; };
+		8F1963FF1C86604E00E9E44D /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F1963FC1C86604E00E9E44D /* ytcpsocket.c */; };
+		8F1964001C86604E00E9E44D /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1963FD1C86604E00E9E44D /* ytcpsocket.swift */; };
 		8FA5877B1C86541E004DA09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5877A1C86541E004DA09F /* AppDelegate.swift */; };
 		8FA5877D1C86541E004DA09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5877C1C86541E004DA09F /* ViewController.swift */; };
 		8FA587801C86541E004DA09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA5877E1C86541E004DA09F /* Main.storyboard */; };
@@ -14,12 +17,6 @@
 		8FA587851C86541E004DA09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA587831C86541E004DA09F /* LaunchScreen.storyboard */; };
 		8FA587901C86541E004DA09F /* HalfredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5878F1C86541E004DA09F /* HalfredTests.swift */; };
 		8FA5879B1C86541E004DA09F /* HalfredUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5879A1C86541E004DA09F /* HalfredUITests.swift */; };
-		8FA587A91C865558004DA09F /* socket.io-client-swift in Resources */ = {isa = PBXBuildFile; fileRef = 8FA587A81C865558004DA09F /* socket.io-client-swift */; };
-		8FA587B01C86566D004DA09F /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AB1C86566D004DA09F /* ysocket.swift */; };
-		8FA587B11C86566D004DA09F /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AC1C86566D004DA09F /* ytcpsocket.c */; };
-		8FA587B21C86566D004DA09F /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AD1C86566D004DA09F /* ytcpsocket.swift */; };
-		8FA587B31C86566D004DA09F /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AE1C86566D004DA09F /* yudpsocket.c */; };
-		8FA587B41C86566D004DA09F /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA587AF1C86566D004DA09F /* yudpsocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F1963FB1C86604E00E9E44D /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = SwiftSocket/ysocket.swift; sourceTree = "<group>"; };
+		8F1963FC1C86604E00E9E44D /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = SwiftSocket/ytcpsocket.c; sourceTree = "<group>"; };
+		8F1963FD1C86604E00E9E44D /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ytcpsocket.swift; path = SwiftSocket/ytcpsocket.swift; sourceTree = "<group>"; };
 		8FA587771C86541E004DA09F /* Halfred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halfred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA5877A1C86541E004DA09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA5877C1C86541E004DA09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,13 +53,7 @@
 		8FA587961C86541E004DA09F /* HalfredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalfredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA5879A1C86541E004DA09F /* HalfredUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfredUITests.swift; sourceTree = "<group>"; };
 		8FA5879C1C86541E004DA09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FA587A81C865558004DA09F /* socket.io-client-swift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "socket.io-client-swift"; path = "../socket.io-client-swift"; sourceTree = "<group>"; };
 		8FA587AA1C86566D004DA09F /* Halfred-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Halfred-Bridging-Header.h"; sourceTree = "<group>"; };
-		8FA587AB1C86566D004DA09F /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/ysocket.swift; sourceTree = "<group>"; };
-		8FA587AC1C86566D004DA09F /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = ../../SwiftSocket/SwiftSocket/ysocket/ytcpsocket.c; sourceTree = "<group>"; };
-		8FA587AD1C86566D004DA09F /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ytcpsocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/ytcpsocket.swift; sourceTree = "<group>"; };
-		8FA587AE1C86566D004DA09F /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = ../../SwiftSocket/SwiftSocket/ysocket/yudpsocket.c; sourceTree = "<group>"; };
-		8FA587AF1C86566D004DA09F /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = yudpsocket.swift; path = ../../SwiftSocket/SwiftSocket/ysocket/yudpsocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +88,6 @@
 				8FA5878E1C86541E004DA09F /* HalfredTests */,
 				8FA587991C86541E004DA09F /* HalfredUITests */,
 				8FA587781C86541E004DA09F /* Products */,
-				8FA587A81C865558004DA09F /* socket.io-client-swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,14 +106,12 @@
 			children = (
 				8FA5877A1C86541E004DA09F /* AppDelegate.swift */,
 				8FA5877C1C86541E004DA09F /* ViewController.swift */,
-				8FA587AB1C86566D004DA09F /* ysocket.swift */,
-				8FA587AC1C86566D004DA09F /* ytcpsocket.c */,
-				8FA587AD1C86566D004DA09F /* ytcpsocket.swift */,
-				8FA587AE1C86566D004DA09F /* yudpsocket.c */,
-				8FA587AF1C86566D004DA09F /* yudpsocket.swift */,
 				8FA5877E1C86541E004DA09F /* Main.storyboard */,
 				8FA587811C86541E004DA09F /* Assets.xcassets */,
 				8FA587831C86541E004DA09F /* LaunchScreen.storyboard */,
+				8F1963FB1C86604E00E9E44D /* ysocket.swift */,
+				8F1963FC1C86604E00E9E44D /* ytcpsocket.c */,
+				8F1963FD1C86604E00E9E44D /* ytcpsocket.swift */,
 				8FA587861C86541E004DA09F /* Info.plist */,
 				8FA587AA1C86566D004DA09F /* Halfred-Bridging-Header.h */,
 			);
@@ -252,7 +243,6 @@
 				8FA587851C86541E004DA09F /* LaunchScreen.storyboard in Resources */,
 				8FA587821C86541E004DA09F /* Assets.xcassets in Resources */,
 				8FA587801C86541E004DA09F /* Main.storyboard in Resources */,
-				8FA587A91C865558004DA09F /* socket.io-client-swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,13 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA587B01C86566D004DA09F /* ysocket.swift in Sources */,
+				8F1963FE1C86604E00E9E44D /* ysocket.swift in Sources */,
 				8FA5877D1C86541E004DA09F /* ViewController.swift in Sources */,
-				8FA587B31C86566D004DA09F /* yudpsocket.c in Sources */,
-				8FA587B11C86566D004DA09F /* ytcpsocket.c in Sources */,
+				8F1963FF1C86604E00E9E44D /* ytcpsocket.c in Sources */,
 				8FA5877B1C86541E004DA09F /* AppDelegate.swift in Sources */,
-				8FA587B21C86566D004DA09F /* ytcpsocket.swift in Sources */,
-				8FA587B41C86566D004DA09F /* yudpsocket.swift in Sources */,
+				8F1964001C86604E00E9E44D /* ytcpsocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +503,7 @@
 				8FA587A11C86541E004DA09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FA587A21C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +512,7 @@
 				8FA587A41C86541E004DA09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FA587A51C86541E004DA09F /* Build configuration list for PBXNativeTarget "HalfredUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +521,7 @@
 				8FA587A71C86541E004DA09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
