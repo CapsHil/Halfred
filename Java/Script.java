@@ -18,7 +18,7 @@ public class Script {
     	this.scripts = scripts;
     }
 
-    public void exec() {
+    public boolean exec() {
     	try {
             Process process = Runtime.getRuntime().exec(scripts);
             BufferedReader output = getOutput(process);
@@ -26,19 +26,22 @@ public class Script {
             String line = "";
 
             while ((line = output.readLine()) != null)
-                System.out.println(line);
+                Log.print(line, "debug");
 
             while ((line = error.readLine()) != null)
-                System.out.println(line);
+                Log.print(line, "debug");
 
             process.waitFor();
+            return true;
         } catch (IOException e) {
             e.printStackTrace();
+            return false;
         } catch (InterruptedException e) {
             e.printStackTrace();
+            return false;
         }
     }
-    public void sudoExec() {
+    public boolean sudoExec() {
         try {
             Process process = Runtime.getRuntime().exec("sudo "+scripts);
             BufferedReader output = getOutput(process);
@@ -46,16 +49,19 @@ public class Script {
             String line = "";
 
             while ((line = output.readLine()) != null)
-                System.out.println(line);
+                Log.print(line, "debug");
 
             while ((line = error.readLine()) != null)
-                System.out.println(line);
+                Log.print(line, "debug");
 
             process.waitFor();
+            return true;
         } catch (IOException e) {
             e.printStackTrace();
+            return false;
         } catch (InterruptedException e) {
             e.printStackTrace();
+            return false;
         }
     }
 

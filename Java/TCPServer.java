@@ -8,15 +8,15 @@ public class TCPServer {
     public TCPServer() {
         try {
             ServerSocket socketServeur = new ServerSocket(port);
-            System.out.println("Starting server");
+            Log.print("Starting server", "verbose");
             String response = "";
-            Powerswitch switch4 = new Powerswitch("Bureau", "4");
+            Powerswitch switch4 = new Powerswitch("Bureau", 4);
 
             while (true) {
                 Socket socketClient = socketServeur.accept();
                 String message = "";
 
-                System.out.println("Connection from : "+socketClient.getInetAddress());
+                Log.print("Connection from : "+socketClient.getInetAddress(), "debug");
 
                 BufferedReader in = new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
                 PrintStream out = new PrintStream(socketClient.getOutputStream());
@@ -31,11 +31,10 @@ public class TCPServer {
                 } else
                     response = "Unknown command";
                 out.println(response);
-                //System.out.println(message);
+                Log.print(message, "debug");
                 
                 socketClient.close();
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }

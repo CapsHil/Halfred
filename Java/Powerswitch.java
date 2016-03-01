@@ -1,25 +1,41 @@
+import java.util.ArrayList;
+
 public class Powerswitch {
 
-	private String name, id;
+	private String name;
+	private int id;
 	private Script script;
-    	final static String path = "RPi_utils/";
-	private String switch4Off = "1119508";
-	private String switch4On = "1119505";
+    final static String path = "RPi_utils/";
+	private ArrayList switchIdOn, switchIdOff;
 
-	public Powerswitch(String name, String id) {
+	public Powerswitch(String name, int id) {
 		this.name = name;
 		this.id = id;
+		switchIdOn = new ArrayList();
+		switchIdOff = new ArrayList();
+		switchIdOn.add("on1");
+		switchIdOn.add("on2");
+		switchIdOn.add("on3");
+		switchIdOn.add("on4");
+		switchIdOff.add("off1");
+		switchIdOff.add("off2");
+		switchIdOff.add("off3");
+		switchIdOff.add("off4");
 	}
 
 	public void on() {
-		System.out.println(name+" is now on");
-		script = new Script(path+"codesend "+switch4On);
-		script.sudoExec();
+		script = new Script(path+"codesend "+switchIdOn.get(this.id-1));
+		if(script.sudoExec())
+			Log.print(name+" is now on", "verbose");
+		else
+			Log.print("Failure", "verboses");
 	}
 
 	public void off() {
-		System.out.println(name+" is now off");
-		script = new Script(path+"codesend "+switch4Off);
-		script.sudoExec();
+		script = new Script(path+"codesend "+switchIdOff.get(this.id-1));
+		if(script.sudoExec())
+			Log.print(name+" is now off", "verbose");
+		else
+			Log.print("Failure", "verboses");
 	}
 }

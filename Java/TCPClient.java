@@ -19,7 +19,7 @@ public class TCPClient {
             PrintStream out = new PrintStream(socket.getOutputStream());
 
             out.println(args[1]);
-            System.out.println(in.readLine());
+            Log.print(in.readLine());
 
         } catch (Exception e) {
             e.printStackTrace();
