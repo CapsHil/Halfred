@@ -16,11 +16,11 @@ public class Powerswitch {
 		switchIdOn.add("on1");
 		switchIdOn.add("on2");
 		switchIdOn.add("on3");
-		switchIdOn.add("on4");
+		switchIdOn.add("1119505");
 		switchIdOff.add("off1");
 		switchIdOff.add("off2");
 		switchIdOff.add("off3");
-		switchIdOff.add("off4");
+		switchIdOff.add("1119508");
 	}
 
 	public void on() {
