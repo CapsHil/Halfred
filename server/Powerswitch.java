@@ -6,13 +6,13 @@ public class Powerswitch {
 	private int id;
 	private Script script;
     final static String path = "RPi_utils/";
-	private ArrayList switchIdOn, switchIdOff;
+	private ArrayList<String> switchIdOn, switchIdOff;
 
 	public Powerswitch(String name, int id) {
 		this.name = name;
 		this.id = id;
-		switchIdOn = new ArrayList();
-		switchIdOff = new ArrayList();
+		switchIdOn = new ArrayList<String>();
+		switchIdOff = new ArrayList<String>();
 		switchIdOn.add("on1");
 		switchIdOn.add("on2");
 		switchIdOn.add("on3");
