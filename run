@@ -4,6 +4,12 @@ if [ $# = 0 ]
 then
     java -classpath server Core
 else
+    if [[ $1 = "-fromGit" ]]
+    then
+        shift
+        git pull
+        ./run $*
+    fi
     if [[ $* =~ "build" ]]
     then
         javac server/*.java
