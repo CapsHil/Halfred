@@ -25,7 +25,7 @@ public class Powerswitch {
 
 	public void on() {
 		script = new Script(path+"codesend "+switchIdOn.get(this.id-1));
-		if(script.sudoExec())
+		if(script.exec(true))
 			Log.print(name+" is now on", "verbose");
 		else
 			Log.print("Failure", "verboses");
@@ -33,7 +33,7 @@ public class Powerswitch {
 
 	public void off() {
 		script = new Script(path+"codesend "+switchIdOff.get(this.id-1));
-		if(script.sudoExec())
+		if(script.exec(true))
 			Log.print(name+" is now off", "verbose");
 		else
 			Log.print("Failure", "verboses");

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo ""
+
+if [ $# = 0 ]
+then
+   java -classpath server Core
+else
+   if [[ $1 = "-fromGit" ]]
+   then
+      shift
+      git pull
+      ./run $*
+   fi
+   if [[ $1 = "-v" ]]
+   then
+      java -classpath server Core -v
+      exit
+   fi
+   if [[ $1 = "-h" ]]
+   then
+      java -classpath server Core -h
+      exit
+   fi
+
+   if [[ $* =~ "build" ]]
+   then
+      javac server/*.java
+      echo "BUILD SUCCESSFULL !"
+      echo ""
+      exit
+   fi
+   if [[ $* =~ "--verbose" ]]
+   then
+      java -classpath server Core --verbose
+   elif [[ $* =~ "--debug" ]]
+   then
+      java -classpath server Core --debug
+   else
+      java -classpath server Core
+   fi
+fi

@@ -1,6 +1,7 @@
 public class Core {
 
 	public final static String version = "0.1";
+	public final static String lastVersionInfo = "Allow to control switch trough TCP socket";
 	public static String logLevel = "mute";
 
     public static void main(String[] args) {
@@ -8,7 +9,8 @@ public class Core {
     		for(int i=0; i<args.length; i++) {
     			if(args[i].equals("-v")) {
     				Log.print("Halfred Core - version "+version);
-					Runtime.getRuntime().exit(0);
+    				Log.print(lastVersionInfo+"\n");
+			        Runtime.getRuntime().exit(0);
     			}
     			else if(args[i].equals("--verbose"))
     				logLevel = "verbose";

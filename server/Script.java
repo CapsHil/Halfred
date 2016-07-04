@@ -18,9 +18,14 @@ public class Script {
     	this.scripts = scripts;
     }
 
-    public boolean exec() {
+    public boolean exec(boolean isSu) {
+        String sudo;
+        if(isSu)
+           sudo = "sudo ";
+        else
+           sudo = "";
     	try {
-            Process process = Runtime.getRuntime().exec(scripts);
+            Process process = Runtime.getRuntime().exec(sudo+scripts);
             BufferedReader output = getOutput(process);
             BufferedReader error = getError(process);
             String line = "";
@@ -41,28 +46,4 @@ public class Script {
             return false;
         }
     }
-    public boolean sudoExec() {
-        try {
-            Process process = Runtime.getRuntime().exec("sudo "+scripts);
-            BufferedReader output = getOutput(process);
-            BufferedReader error = getError(process);
-            String line = "";
-
-            while ((line = output.readLine()) != null)
-                Log.print(line, "debug");
-
-            while ((line = error.readLine()) != null)
-                Log.print(line, "debug");
-
-            process.waitFor();
-            return true;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
 }
