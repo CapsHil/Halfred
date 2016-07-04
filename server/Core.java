@@ -1,7 +1,7 @@
 public class Core {
 
-	public final static String version = "0.1";
-	public final static String lastVersionInfo = "Allow to control switch trough TCP socket";
+	public final static String version = "0.2";
+	public final static String lastVersionInfo = "Add clock support ";
 	public static String logLevel = "mute";
 
     public static void main(String[] args) {
@@ -23,6 +23,11 @@ public class Core {
 			}
     	}
         printWelcomeMessage();
+        Clock clock = new Clock(17, 55);
+        Thread clockThread = new ClockThread(clock);
+        clockThread.start();
+        Audio son = new Audio("file.wma");
+        son.run();
         TCPServer server = new TCPServer();
     }
 
