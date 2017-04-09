@@ -1,12 +1,15 @@
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
+const execFile = require('child_process').execFile;
 
-
-function puts(error, stdout, stderr) { console.log(stdout) }
 
 module.exports = {
 
     say: function(toSay) {
-        exec('sudo mpg321 "http://translate.google.com/translate_tts?tl=fr&client=tw-ob&q='+toSay+'"', puts);
+        execFile('./say.sh', [toSay], (error, stdout, stderr) => {
+            if (error) {
+                throw error;
+            }
+            console.log(stdout);
+        });
     }
-
 }

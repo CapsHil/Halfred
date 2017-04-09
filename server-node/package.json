@@ -2,7 +2,7 @@
   "name": "server-node",
   "version": "0.0.0",
   "description": "Halfred Core",
-  "main": "server.js",
+  "main": "halfred.js",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node halfred.js"
   },
   "repository": {
     "type": "git",
