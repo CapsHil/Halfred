@@ -1,0 +1,27 @@
+{
+  "name": "server-node",
+  "version": "0.0.0",
+  "description": "Halfred Core",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "simple-json-db": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CapsHil/Halfred.git"
+  },
+  "author": "Pierre RABY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapsHil/Halfred/issues"
+  }
+}
