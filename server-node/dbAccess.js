@@ -6,7 +6,7 @@ module.exports = {
         plugs.set(id, "{name: " + name + ", plugIdOn: " + onId + ", plugIdOff: " + offId + "}");
         plugs.sync();
     },
-	deletePLug: function(id) {
+	deletePlug: function(id) {
 		plugs.delete(id);
 		plugs.sync();
 	},

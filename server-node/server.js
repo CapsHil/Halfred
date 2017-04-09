@@ -1,8 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require("fs");
-var exec = require('child_process').exec;
 var db = require("./dbAccess");
+var vocal = require("./vocal");
 
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -16,20 +16,20 @@ app.post('/api/plugs/add', function(req, res) {
 });
 
 app.delete('/api/plugs/:id', function(req, res) {
-	var plug = db.deletePlug(req.body.id);
-    console.log("Plug with id "+req.body.id+" named "+plug.name+" has been deleted");
+	db.deletePlug(req.body.id);
+    console.log("Plug with id "+req.body.id+" has been deleted");
     res.status(200);
-    res.end("Plug with id "+req.body.id+" named "+plug.name+" has been deleted")
+    res.end("Plug with id "+req.body.id+" has been deleted")
 });
 
 app.get('/api/plugs/:id/on', function(req, res) {
 	console.log("Switch plug with id "+req.params.id+" on");
 	res.status(200);
-	res.end('Plug with id '+req.params.id+' is now active');
+	res.end('Plug with id '+req.params.id+' named '+db.getPlug(req.params.id).name+' is now active');
 });
 
-app.get('/api/say', function(req, res) {
-	exec('mpg321 "http://translate.google.com/translate_tts?tl=fr&client=tw-ob&q=Bonjour"');
+app.post('/api/say', function(req, res) {
+	vocal.say(encodeURIComponent(req.body.say));
     res.status(200);
     res.end('Halfred is speaking');
 });
