@@ -1,8 +1,17 @@
 const fs = require("fs");
 const db = require("./dbAccess");
 const vocal = require("./vocal");
+const request = require('request');
 
 module.exports = function(app) {
+
+    app.get('/api/weather', function (req, res) {
+        console.log("Get weather");
+        request('http://api.openweathermap.org/data/2.5/weather?q=Paris&APPID=59f6ee8fc58d73946a76f9053c575bbc&units=metric&lang=fr', function (error, response, body) {
+            res.status(200);
+            res.end(body);
+        });
+    });
 
     app.post('/api/plugs/add', function (req, res) {
         console.log("POST request from " + req.headers['x-real-ip'] + " on /api/plugs/add");
