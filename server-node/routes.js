@@ -49,6 +49,8 @@ module.exports = function(app) {
     app.get('/api/lastPresence', function (req, res) {
         console.log("Get request from " + req.header['x-real-ip'] + " on /api/lastPresence");
         res.status(200);
-        res.end(presence.getLastPresenceDate())
+        presence.getLastPresenceDate(function(date) {
+            res.end(date);
+        });
     })
 }
