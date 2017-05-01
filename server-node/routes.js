@@ -50,8 +50,8 @@ module.exports = function(app) {
         console.log("Get request from " + req.header['x-real-ip'] + " on /api/lastPresence");
         res.status(200);
         presence.getLastPresenceDate(function(date) {
-            date = date.replace(/(\r\n|\n|\r)/gm,"");
-            res.end(date);
+	    date = date.replace(/(\r\n|\n|\r)/gm,"");
+            res.end('{"date": "'+date+'"}');
         });
     })
 }
