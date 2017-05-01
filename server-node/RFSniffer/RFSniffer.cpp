@@ -50,6 +50,7 @@ int main(int argc, char *argv[]) {
           printf("Unknown encoding\n");
         } else if(value == 5592405) {    
 	  printf("Movement detected from %i\n", mySwitch.getReceivedValue());	
+	  system("./pushNotif.sh");
 	  sleep(1);
    	} else {
           printf("Received %i\n", mySwitch.getReceivedValue() );
