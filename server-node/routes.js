@@ -1,6 +1,7 @@
 const fs = require("fs");
 const db = require("./dbAccess");
 const vocal = require("./vocal");
+const presence = require("./presence");
 const request = require('request');
 
 module.exports = function(app) {
@@ -44,4 +45,10 @@ module.exports = function(app) {
         res.status(200);
         res.end('Halfred is speaking');
     });
+
+    app.get('/api/lastPresence', function (req, res) {
+        console.log("Get request from " + req.header['x-real-ip'] + " on /api/lastPresence");
+        res.status(200);
+        res.end(presence.getLastPresenceDate())
+    })
 }
