@@ -28,8 +28,9 @@
     display: grid;
     grid-template-columns: repeat(4, 24%);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas:    "plugs clock weather voice-assistant"
-    ". . . .";
+    grid-template-areas:    "plugs plugs plugs weather"
+                            "clock voice-assistant voice-assistant ."
+                            ". . . .";
     grid-gap: 10px 10px;
     /*justify-items: center;*/
     /*justify-content: center;*/

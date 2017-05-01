@@ -17,31 +17,16 @@ class VoiceAssistant extends React.Component {
 
 	handleSubmit(event) {
 		event.preventDefault();
-		var myRequest = new Request('http://localhost:8081/api/say', {method: 'POST', body: '{"say":"TEST"}'});
-		fetch(myRequest)
-			.then(function(response) {
-				if(response.status === 200) return response.json();
-				else throw new Error('Something went wrong on api server!');
+		fetch('http://localhost:8081/api/say', {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				say: 'TEST'
 			})
-			.then(function(response) {
-				console.debug(response);
-				// ...
-			})
-			.catch(function(error) {
-				console.error(error);
-			});
-
-		// fetch('http://localhost:8081/api/say', {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Accept': 'application/json',
-		// 		'Content-Type': 'application/json',
-		// 	},
-		// 	body: JSON.stringify({
-		// 		say: event.target.value
-		// 	})
-		// });
-		// console.log('Post request to API');
+		})
 	}
 
 	render() {
@@ -49,9 +34,9 @@ class VoiceAssistant extends React.Component {
 			<div className="voice-assistant card">
 				<h2>Voice Assistant</h2>
 				<form onSubmit={this.handleSubmit}>
-					<input type="text" onChange={this.handleChange}/>
+					<input className="voice-input" type="text" onChange={this.handleChange} placeholder="What do you want to say ?"/>
 					<br />
-					<input type="submit" value="Say !"/>
+					<input className="voice-button" type="submit" value="Say !"/>
 				</form>
 			</div>
 		);

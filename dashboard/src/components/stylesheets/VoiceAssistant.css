@@ -1,3 +1,13 @@
 .voice-assistant {
     grid-area: voice-assistant;
+    font-family: 'Bungee';
+    background-color: darkorange;
+}
+
+.voice-button {
+
+}
+
+.voice-input {
+    width: 80%;
 }
