@@ -1,0 +1,5 @@
+.presence-detector {
+    grid-area: presence-detector;
+    background-color: crimson;
+    font-family: 'Bungee';
+}

@@ -8,6 +8,7 @@
     "react-animated-weather": "^0.1.6",
     "react-clock": "^1.0.5",
     "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
     "react-weathericons": "^1.0.3"
   },
   "devDependencies": {

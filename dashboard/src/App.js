@@ -5,6 +5,8 @@ import Plugs from './components/Plugs'
 import Weather from "./components/Weather";
 import VoiceAssistant from "./components/VoiceAssistant";
 import Clock from "./components/Clock";
+import PresenceDetector from "./components/PresenceDetector";
+
 
 class App extends React.Component {
   render() {
@@ -22,6 +24,7 @@ class App extends React.Component {
             <Weather/>
             <VoiceAssistant/>
             <Clock />
+            <PresenceDetector/>
         </div>
 
       </div>

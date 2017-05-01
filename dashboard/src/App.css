@@ -29,7 +29,7 @@
     grid-template-columns: repeat(4, 24%);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:    "plugs plugs plugs weather"
-                            "clock voice-assistant voice-assistant ."
+                            "clock voice-assistant voice-assistant presence-detector"
                             ". . . .";
     grid-gap: 10px 10px;
     /*justify-items: center;*/

@@ -1,5 +1,6 @@
 import React from 'react'
 import './stylesheets/VoiceAssistant.css'
+import { BACK_END_PORT, BACK_END_URL} from '../Properties';
 
 class VoiceAssistant extends React.Component {
 
@@ -17,7 +18,7 @@ class VoiceAssistant extends React.Component {
 
 	handleSubmit(event) {
 		event.preventDefault();
-		fetch('http://localhost:8081/api/say', {
+		fetch('http://'+BACK_END_URL+':'+BACK_END_PORT+'/api/say', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json',
