@@ -1,0 +1,27 @@
+.weather {
+    grid-area: weather;
+    background-color: midnightblue;
+    color: whitesmoke;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:    "title infos"
+                            "weather-icon infos";
+    align-content: center;
+    align-items: center;
+}
+
+.weather-icon {
+    grid-area: weather-icon;
+}
+
+.weather-title {
+    grid-area: title;
+}
+
+.weather-infos {
+    grid-area: infos;
+}

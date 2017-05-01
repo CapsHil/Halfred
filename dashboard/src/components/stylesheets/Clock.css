@@ -1,0 +1,8 @@
+.clock {
+    grid-area: clock;
+    font-size: large;
+    font-family: 'Bungee';
+    font-size: 48px;
+    color: lawngreen;
+    background-color: black;
+}
